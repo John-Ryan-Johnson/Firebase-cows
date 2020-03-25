@@ -13,6 +13,7 @@ const buildCows = () => {
       });
       domString += '</div>';
       utils.printToDom('pasture', domString);
+      $('body').on('click', '.delete-cow');
     })
     .catch((err) => console.error('get cows broke', err));
 };
